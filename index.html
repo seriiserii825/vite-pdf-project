@@ -6,27 +6,32 @@
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
-    <div class="main-wrapp">
-      <header class="main-header">
-        <h1>PDF Export with CSS (SCSS)</h1>
-      </header>
-
-      <div class="content">
-        <div class="main-block">
-          <div class="main-block__item">
-            <span>Box A</span>
-            <p>This is the first content box.</p>
-          </div>
-          <div class="main-block__item">
-            <span>Box B</span>
-            <p>This is the second content box.</p>
+    <div class="wrapper" style="background: url(&quot;/bg-image.jpg&quot;) no-repeat center">
+      <div class="container">
+        <header class="main-header">
+          <h1>PDF Export with CSS (SCSS)</h1>
+        </header>
+        <div class="content">
+          <div class="main-block">
+            <div class="main-block__item">
+              <span>Box A</span>
+              <p>This is the first content box.</p>
+            </div>
+            <div class="main-block__item">
+              <span>Box B</span>
+              <p>This is the second content box.</p>
+            </div>
           </div>
         </div>
+        <ul class="main-block__list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+        <p class="no-print">This text won't appear in the PDF.</p>
       </div>
-
-      <div class="page-break"></div>
-
-      <p class="no-print">This text won't appear in the PDF.</p>
     </div>
   </body>
 </html>

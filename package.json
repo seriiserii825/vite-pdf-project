@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "watch-pdf": "chokidar 'index.html' 'src/**/*.scss' -c 'node generate-pdf.js'",
     "build": "vite build",
     "preview": "vite preview",
-    "generate": "node generate-pdf.js",
-    "open": "xdg-open output.pdf"
+    "generate": "node generate-pdf.js && xdg-open output.pdf"
   },
   "devDependencies": {
     "sass": "^1.89.2",

@@ -7,7 +7,9 @@
     "dev": "vite",
     "watch-pdf": "chokidar 'index.html' 'src/**/*.scss' -c 'node generate-pdf.js'",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate": "node generate-pdf.js",
+    "open": "xdg-open output.pdf"
   },
   "devDependencies": {
     "sass": "^1.89.2",
@@ -15,6 +17,10 @@
   },
   "dependencies": {
     "chokidar-cli": "^3.0.0",
+    "puppeteer": "^24.10.0",
     "scss": "^0.2.4"
+  },
+  "engines": {
+    "node": "20.19.1"
   }
 }

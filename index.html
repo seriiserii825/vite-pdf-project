@@ -1,28 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Vite PDF Example</title>
-  <script type="module" src="/main.js"></script>
-</head>
-<body>
-  <header>
-    <h1>PDF Export with CSS (SCSS)</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vite PDF Example</title>
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapp">
+      <header class="main-header">
+        <h1>PDF Export with CSS (SCSS)</h1>
+      </header>
 
-  <div class="content">
-    <div class="box">
-      <span>Box A</span>
-      <p>This is the first content box.</p>
+      <div class="content">
+        <div class="main-block">
+          <div class="main-block__item">
+            <span>Box A</span>
+            <p>This is the first content box.</p>
+          </div>
+          <div class="main-block__item">
+            <span>Box B</span>
+            <p>This is the second content box.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-break"></div>
+
+      <p class="no-print">This text won't appear in the PDF.</p>
     </div>
-    <div class="box">
-      <span>Box B</span>
-      <p>This is the second content box.</p>
-    </div>
-  </div>
-
-  <div class="page-break"></div>
-
-  <p class="no-print">This text won't appear in the PDF.</p>
-</body>
+  </body>
 </html>

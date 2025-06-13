@@ -64,6 +64,9 @@
   color: white;
   background: green;
   border-bottom: 4px solid blue;
+  &:last-of-type {
+    background: pink;
+  }
 }
 .main-block {
   &__list {

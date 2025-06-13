@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "generate": "node generate-pdf.js && xdg-open output.pdf"
+    "generate": "node generate-pdf.js",
+    "open": "xdg-open output.pdf"
   },
   "devDependencies": {
     "sass": "^1.89.2",
